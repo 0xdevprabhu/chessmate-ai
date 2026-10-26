@@ -1,0 +1,35 @@
+# Dependencies
+node_modules/
+frontend/node_modules/
+
+# Next.js build outputs
+.next/
+frontend/.next/
+out/
+frontend/out/
+
+# Python cache & virtual environments
+__pycache__/
+backend/app/__pycache__/
+backend/app/routes/__pycache__/
+backend/tests/__pycache__/
+*.py[cod]
+.pytest_cache/
+venv/
+env/
+.venv/
+
+# Local Environment Variables
+.env
+backend/.env
+frontend/.env.local
+
+# Binary Executables (Stockfish engine binary)
+backend/bin/*.exe
+backend/bin/stockfish
+backend/bin/stockfish*
+
+# Logs & temp
+*.log
+.DS_Store
+Thumbs.db

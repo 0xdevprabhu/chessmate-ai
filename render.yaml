@@ -1,0 +1,14 @@
+services:
+  - type: web
+    name: chessmate-backend
+    runtime: docker
+    dockerfilePath: backend/Dockerfile
+    plan: free
+    region: oregon
+    envVars:
+      - key: PORT
+        value: 8000
+      - key: STOCKFISH_PATH
+        value: /usr/games/stockfish
+      - key: ALLOWED_ORIGINS
+        value: "*"
